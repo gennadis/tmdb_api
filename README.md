@@ -1,3 +1,40 @@
+# TMDB
+Набор скриптов для работы с [TheMovieDB](https://www.themoviedb.org/).
+
+
+## Setup
+1. Get your personal API key [https://www.themoviedb.org/documentation/api](https://www.themoviedb.org/documentation/api)
+
+2. Clone project
+```bash
+git clone https://github.com/gennadis/tmdb_api.git
+cd tmdb_api
+```
+
+3. Create virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+4. Install requirements
+```bash
+pip install -r requirements.txt
+```
+
+5. Make test API query. You should get Saw II movie budget.
+```bash
+python hello_api_TMDB.py
+```
+
+6. Build your own local database. Fetch information of a thousand films.
+```bash
+python make_own_db.py
+```
+
+
+
+
 ## find_similar.py
 Скрипт выдает рекомендации с фильмами, похожими на тот, что ему передает пользователь.  
 Вначале скрипт спрашивает путь до файла с локальной БД, затем принимает название фильма от пользователя, далее выводит отсортированный список подходящих по параметрам фильмов (по умолчанию - 8 рекомендаций).
